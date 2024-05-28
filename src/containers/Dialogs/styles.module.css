@@ -1,0 +1,79 @@
+.dialogOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexColumn,
+.dialog,
+.form,
+.filedContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.dialog {
+  background: #f5f5f5;
+  padding: 2.5em;
+  border-radius: 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  gap: 1.3em;
+}
+
+.dialogActions {
+  display: flex;
+  align-self: center;
+  gap: 1em;
+}
+
+.button {
+  color: white;
+  font-weight: 700;
+  border: none;
+  padding: 0.6rem 1.25rem;
+  border-radius: 0.35rem;
+  cursor: pointer;
+}
+
+.confirmButton {
+  background-color: #f0c040;
+}
+
+.cancelButton {
+  background-color: #00acc1;
+}
+
+.form {
+  gap: 2em;
+}
+
+.filedContainer {
+  gap: 0.25em;
+}
+
+.filedContainer label {
+  font-size: 0.85rem;
+  color: gray;
+  padding-left: 0.25rem;
+}
+
+.field {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  min-width: 250px;
+  background-color: white;
+}
+
+.disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: auto;
+}

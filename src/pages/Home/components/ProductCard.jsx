@@ -1,9 +1,13 @@
 import { faCartPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useContext } from "react";
 import Rating from "../../../components/Rating/Rating";
+import { CartProductsContext } from "../../../context";
 import styles from "./ProductCard.module.css";
 
-const ProductCard = ({ product }) => {
+const ProductCard = ({ product, onAdd }) => {
+  const { addToCart } = useContext(CartProductsContext);
+
   const {
     title,
     description,
@@ -11,6 +15,11 @@ const ProductCard = ({ product }) => {
     image,
     rating: { rate },
   } = product;
+
+  const handleAddToCart = () => {
+    addToCart(product);
+    onAdd();
+  };
 
   return (
     <div className={styles.productCard}>
@@ -28,7 +37,7 @@ const ProductCard = ({ product }) => {
       </div>
 
       <div className={styles.overlay}>
-        <button className={styles.addToCartButton}>
+        <button className={styles.addToCartButton} onClick={handleAddToCart}>
           <FontAwesomeIcon icon={faCartPlus} />
           Add to Cart
         </button>
