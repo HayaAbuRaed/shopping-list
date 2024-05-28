@@ -1,11 +1,11 @@
 import { faCartPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Rating from "../../../components/Rating/Rating";
-import styles from "./ProductCard.module.css";
 import { useContext } from "react";
+import Rating from "../../../components/Rating/Rating";
 import { CartProductsContext } from "../../../context";
+import styles from "./ProductCard.module.css";
 
-const ProductCard = ({ product }) => {
+const ProductCard = ({ product, onAdd }) => {
   const { addToCart } = useContext(CartProductsContext);
 
   const {
@@ -18,6 +18,7 @@ const ProductCard = ({ product }) => {
 
   const handleAddToCart = () => {
     addToCart(product);
+    onAdd();
   };
 
   return (
