@@ -33,7 +33,6 @@ const Navbar = () => {
       <div className={styles.navbarIcons}>
         <a href="/" className={styles.navbarLink}>
           <FontAwesomeIcon icon={faHeart} />
-          <FontAwesomeIcon icon="fa-regular fa-heart" />
         </a>
 
         <a href="/cart" className={styles.navbarLink}>
