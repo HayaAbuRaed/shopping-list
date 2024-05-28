@@ -3,6 +3,7 @@ import { Outlet } from "react-router-dom";
 
 const Layout = lazy(() => import("../pages/Layout/index"));
 const Home = lazy(() => import("../pages/Home/index"));
+const Cart = lazy(() => import("../pages/Cart/index"));
 
 const publicRoutes = {
   path: "/",
@@ -18,7 +19,7 @@ const publicRoutes = {
         },
         {
           path: "cart",
-          element: <h1>cart</h1>,
+          element: <Cart />,
         },
       ],
     },

@@ -1,0 +1,26 @@
+.rating {
+  display: flex;
+}
+
+.starContainer {
+  position: relative;
+  display: inline-block;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: color 200ms;
+}
+
+.star {
+  position: absolute;
+  overflow: hidden;
+  white-space: nowrap;
+  color: gold;
+}
+
+.starOutline {
+  color: grey;
+}
+
+.rating.readOnly .starContainer {
+  cursor: default;
+}
