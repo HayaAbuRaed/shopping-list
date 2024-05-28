@@ -1,0 +1,52 @@
+.cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  padding: 2em 3em;
+}
+
+.cartList {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 1em;
+}
+
+.totalBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+.total {
+  font-size: 1.15rem;
+}
+
+.checkoutButton {
+  padding: 0.5em 1em;
+  background-color: #f0c040;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.checkoutButton:hover {
+  background-color: #e8b320;
+}
+
+@media screen and (max-width: 600px) {
+  .cart {
+    padding: 2em 1em;
+  }
+}
