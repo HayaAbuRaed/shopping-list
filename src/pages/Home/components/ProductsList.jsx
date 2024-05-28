@@ -3,13 +3,14 @@ import styles from "./ProductsList.module.css";
 import ProductCard from "./ProductCard";
 import useGetProducts from "../hooks/useGetProducts";
 import Snackbar from "../../../containers/Snackbar";
+import ListLoadingSkeleton from "./ListLoadingSkeleton";
 
 const ProductsList = () => {
   const [snackbarOpen, setSnackbarOpen] = useState(false);
 
   const { products, isFetching } = useGetProducts();
 
-  if (isFetching) return <p>Loading...</p>;
+  if (isFetching) return <ListLoadingSkeleton />;
 
   if (!products) return <p>No products</p>;
 
