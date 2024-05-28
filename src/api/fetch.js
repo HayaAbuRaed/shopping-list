@@ -9,7 +9,12 @@ const handleResponse = async (response) => {
   return response.json();
 };
 
-const fetchData = async (endpoint, method = "GET", body = null, headers = {}) => {
+const fetchData = async (
+  endpoint,
+  method = "GET",
+  body = null,
+  headers = {}
+) => {
   const options = {
     method,
     headers: {
@@ -19,9 +24,7 @@ const fetchData = async (endpoint, method = "GET", body = null, headers = {}) =>
     body: body ? JSON.stringify(body) : null,
   };
 
-  // console.log("URL", BASE_URL);
   const response = await fetch(`${BASE_URL}${endpoint}`, options);
-
 
   return handleResponse(response);
 };
