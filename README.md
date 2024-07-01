@@ -28,7 +28,7 @@ To get a local copy up and running, follow these steps:
 
 1. **Clone the repository**:
     ```sh
-    git clone https://github.com/yourusername/shopping-cart-interface.git
+    git clone https://github.com/HayaAbuRaed/shopping-list.git
     ```
 2. **Navigate to the project directory**:
     ```sh
