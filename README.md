@@ -32,15 +32,15 @@ To get a local copy up and running, follow these steps:
     ```
 2. **Navigate to the project directory**:
     ```sh
-    cd shopping-cart-interface
+    cd shopping-list
     ```
 3. **Install dependencies**:
     ```sh
-    npm install
+    yarn install
     ```
 4. **Run the application**:
     ```sh
-    npm start
+    yarn start
     ```
 
 <br />
