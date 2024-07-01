@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# Simple Shopper
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains the implementation of a shopping cart interface using <img src="https://img.shields.io/badge/React-blue?style=flat-square&logo=react&labelColor=%23f2f2f2&color=%2361DAFB" width="79" /> and ![Static Badge](https://img.shields.io/badge/css%20modules-green?style=flat-square&logo=css%20modules&logoColor=%23000&labelColor=%23f1f1f1&color=%23000), designed to enhance user experience while browsing and purchasing products online. The solution includes features like a product grid, cart management, and a checkout form.
 
-## Available Scripts
+<br />
 
-In the project directory, you can run:
+<div align="center">
+  <img src="https://github.com/HayaAbuRaed/shopping-list/assets/123592435/fe709fa6-211f-4fa4-8d54-aed62b13ca4b" alt="view" width=600/>
+</div>
 
-### `yarn start`
+<br />
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## ⭐ Features
 
-### `yarn test`
+1. **Product Grid**: Products are displayed in a grid format, showcasing the name, image, and price of each item.
+2. **Add to Cart**: Each product includes an "Add to Cart" button, enabling users to add items to their shopping cart.
+3. **Cart Details**: A cart section lists all the items that have been added, allowing users to review their selections.
+4. **Item Removal**: Users have the option to delete individual items from the cart.
+5. **Total Amount**: The interface displays the cumulative price of the items in the cart.
+6. **Checkout**: Users can fill out a form with their name and email for order submission.
+   
+<br />
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 Getting Started
 
-### `yarn build`
+To get a local copy up and running, follow these steps:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the repository**:
+    ```sh
+    git clone https://github.com/yourusername/shopping-cart-interface.git
+    ```
+2. **Navigate to the project directory**:
+    ```sh
+    cd shopping-cart-interface
+    ```
+3. **Install dependencies**:
+    ```sh
+    npm install
+    ```
+4. **Run the application**:
+    ```sh
+    npm start
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<br />
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🛠️ Usage
 
-### `yarn eject`
+1. **Browse Products**: Navigate through the grid to view available products.
+2. **Add to Cart**: Click the "Add to Cart" button on a product to add it to your shopping cart.
+3. **Review Cart**: Go to the cart section to see all the items added, with options to remove individual items.
+4. **Check Total**: The total price of all items in the cart is displayed in real-time.
+5. **Checkout**: Fill in your name and email in the checkout form and submit your order.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<br />
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🚀 Deployment
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The frontend is deployed using ![Static Badge](https://img.shields.io/badge/Netlify-any?style=flat-square&logo=Netlify&labelColor=%23f1f1f1&color=%2314c1be)
+. Follow [this link](https://simple-shopper.netlify.app) to have a look.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<br /><br />
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+##
+<p align="center">
+	✨ I'll be glad seeing your feedback, feel free to reach out! ✨
+</p>
