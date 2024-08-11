@@ -10,6 +10,8 @@ const CheckoutDialog = ({ onClose }) => {
     email: "",
   });
 
+  const isDisabled = !formData.name || !formData.email;
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -25,11 +27,11 @@ const CheckoutDialog = ({ onClose }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setIsSnackbarOpen(true);
-    setTimeout(() => handleClose(), 4000);
+    if(!isDisabled) {
+      setIsSnackbarOpen(true);
+      setTimeout(() => handleClose(), 4000);
+    }
   };
-
-  const isDisabled = !formData.name || !formData.email;
 
   return (
     <>
